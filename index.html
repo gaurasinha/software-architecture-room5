@@ -1,46 +1,92 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
-		body{
+		body {
 			font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
 		}
+
 		.header {
-			padding: 80px; /* some padding */
-  			text-align: center; /* center the text */
-  			background: #C3B1E1; /* green background */
-  			color: white; /* white text color */
+			padding: 80px;
+			/* some padding */
+			text-align: center;
+			/* center the text */
+			background: #C3B1E1;
+			/* green background */
+			color: white;
+			/* white text color */
 		}
 
 		/* Increase the font size of the <h1> element */
 		.header h1 {
-  			font-size: 40px;
+			font-size: 40px;
+		}
+
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			border: 1px solid #e7e7e7;
+			background-color: #f3f3f3;
+		}
+
+		li {
+			float: left;
+		}
+
+		li a {
+			display: block;
+			color: #666;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		li a:hover:not(.navigation) {
+			background-color: rgb(116, 101, 101);
+		}
+
+		li a.navigation {
+			color: white;
+			background-color: #C3B1E1;
 		}
 	</style>
 	<title> First Website </title>
 </head>
+
 <body>
 	<div class="header">
 		<h1>Bookflix</h1>
 		<p>This is my first website!</p>
 	</div>
+	<ul>
+		<li><a class="navigation" href="#classic">Classic</a></li>
+		<li><a href="#romantic">Romantic</a></li>
+		<li><a href="#kids">Kids</a></li>
+		<li style= "float: right;"><a href="#about">About</a></li>
+	  </ul>
+
 	
 	<div class="row">
-  <div class="main">
-    <h2>Trending Books</h2>
-   
-    <section>
-        <img class="mySlides" src="itendswithus.jpg"
-        style="width:20%">
-        <img class="mySlides" src="wayofthe wolf.jpg"
-        style="width:20%">
-        <img class="mySlides" src="elonmask.jpg"
-        style="width:20%">
-  </section>
-    </div>
-</div>
+		<div class="main">
+		  <h2>Trending Books</h2>
+	  
+		  <section>
+			  <img class="mySlides" src="itendswithus.jpg"
+			  style="width:20%">
+			  <img class="mySlides" src="wayofthe wolf.jpg"
+			  style="width:20%">
+			  <img class="mySlides" src="elonmask.jpg"
+			  style="width:20%">
+		</section>
+		  </div>
+	  </div>
+
 
 </body>
+
 </html>
